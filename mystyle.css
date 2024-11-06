@@ -41,6 +41,7 @@ select {
 
 .gender input[type="radio"] {
     margin-right: 5px;
+    margin: 5px 0 15px;
 }
 
 button[type="submit"] {
