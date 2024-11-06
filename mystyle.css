@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Kanit", sans-serif;
 }
 
 body {
@@ -13,6 +13,8 @@ body {
 h1 {
     text-align: center;
     color: #164fa5;
+    font-weight: 700;
+    font-style: italic;
 }
 
 form {
