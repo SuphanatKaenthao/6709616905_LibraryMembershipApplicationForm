@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library Membership Application Form</title>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    
+
+    <h1>Library Membership Application Form</h1>
+    <form id="membershipForm">
+        <label for="thaiName">ชื่อ - นามสกุล (ภาษาไทย) <span class="required">*</span></label>
+        <input type="text" id="thaiName" name="thaiName" required>
+
+        <label for="englishName">ชื่อ - นามสกุล (ภาษาอังกฤษ) <span class="required">*</span></label>
+        <input type="text" id="englishName" name="englishName" required>
+
+        <label>เพศ <span class="required">*</span></label>
+        <div class="gender">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">ชาย</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">หญิง</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">อื่นๆ</label>
+        </div>
+
+        <label for="studentID">รหัสนักศึกษา <span class="required">*</span></label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="faculty">คณะที่ศึกษา <span class="required">*</span></label>
+        <input type="text" id="faculty" name="faculty" required>
+
+        <label for="email">ที่อยู่อีเมล <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="birthdate">วันเดือนปีเกิด <span class="required">*</span></label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="bookTypes">ประเภทของหนังสือที่สนใจ</label>
+        <select id="bookTypes" name="bookTypes" multiple>
+            <option value="fiction">นิยาย</option>
+            <option value="non-fiction">สารคดี</option>
+            <option value="science">วิทยาศาสตร์</option>
+            <option value="history">ประวัติศาสตร์</option>
+            <option value="technology">เทคโนโลยี</option>
+            <option value="other">อื่นๆ</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            ต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมล
+        </label>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
 </body>
 </html>
